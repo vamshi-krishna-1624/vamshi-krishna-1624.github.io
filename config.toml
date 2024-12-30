@@ -1,0 +1,87 @@
+# Basic site configuration
+baseURL = "https://vamshi-krishna-1624.github.io/"  # Replace with your GitHub Pages URL
+languageCode = "en-us"
+title = "Your Documentation Site"  # Replace with your site title
+theme = "hugo-book"
+
+# Enable search and other features
+enableGitInfo = true
+enableRobotsTXT = true
+
+# Theme-specific parameters
+[params]
+  # General appearance
+  BookTheme = "light"
+  BookToC = true
+  BookSection = "docs"
+  
+  # Search functionality
+  BookSearch = true
+  BookSearchExcludes = ['menu']
+  
+  # Repository links - replace with your repository URL
+  BookRepo = "https://github.com/vamshi-krishna-1624/vamshi-krishna-1624.github.io"
+  BookEditPath = "edit/main"
+  
+  # Navigation
+  BookMenuBundle = '/menu'
+  BookDateFormat = 'January 2, 2006'
+  
+  # Comments and feedback
+  BookComments = false
+  
+  # Custom parameters
+  author = "Vamshi Krishna"
+  description = "Comprehensive documentation for your project"
+  images = ["site-feature-image.jpg"]
+  
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allows HTML in Markdown files
+      
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+
+# Main menu configuration
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  
+  [[menu.main]]
+    name = "Documentation"
+    url = "/docs/"
+    weight = 2
+  
+  [[menu.main]]
+    name = "API Reference"
+    url = "/api/"
+    weight = 3
+  
+  [[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/vamshi-krishna-1624/vamshi-krishna-1624.github.io"
+    weight = 4
+
+# Privacy configurations
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.youtube]
+    disable = true
