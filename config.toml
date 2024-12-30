@@ -2,7 +2,6 @@
 baseURL = "https://vamshi-krishna-1624.github.io/"  # Replace with your GitHub Pages URL
 languageCode = "en-us"
 title = "Your Documentation Site"  # Replace with your site title
-theme = "hugo-book"
 
 # Enable search and other features
 enableGitInfo = true
@@ -39,6 +38,13 @@ enableRobotsTXT = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
+
+theme = "github.com/alex-shpak/hugo-book"
+
+[module]
+  [[module.imports]]
+    path = "github.com/alex-shpak/hugo-book"
+
 
 # Markup configuration
 [markup]
