@@ -6,7 +6,7 @@ date: 2024-01-02
 weight: 1
 ---
 
-# Installation Guide
+# Objective
 
 This guide covers installation steps for different platforms and environments. Choose the method that best suits your needs.
 

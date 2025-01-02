@@ -6,7 +6,7 @@ date: 2024-01-01
 weight: 10
 ---
 
-# Getting Started
+# Overview
 
 Welcome to our project! This guide will help you get up and running quickly. Whether you're new to the project or an experienced developer, this guide will provide everything you need to start building.
 

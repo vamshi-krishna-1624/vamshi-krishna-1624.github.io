@@ -27,6 +27,12 @@ lineNos = true
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
 [build]
   writeStats = true  # If you're using Hugo Pipes
 

@@ -6,7 +6,7 @@ date: 2024-01-03
 weight: 30
 ---
 
-# API Reference
+# Overview
 
 This documentation provides detailed information about our REST API endpoints, including request/response formats, authentication, and examples.
 

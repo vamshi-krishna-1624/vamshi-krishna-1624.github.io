@@ -1,0 +1,10 @@
+{{ if and (gt .WordCount 200) (.TableOfContents) }}
+  <div class="docs-toc">
+    <div class="toc-container">
+      <h4>On this page</h4>
+      <nav class="toc-list">
+        {{ .TableOfContents }}
+      </nav>
+    </div>
+  </div>
+{{ end }}

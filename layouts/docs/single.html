@@ -51,44 +51,22 @@
     </div>
 
     <!-- Main content -->
-    <main class="docs-content">
-        <div class="max-w-4xl mx-auto">
-            <article class="prose max-w-none">
-                <h1>{{ .Title }}</h1>
-                {{ .Content }}
-                
-                {{ if eq .Kind "section" }}
-                    {{ if .Pages }}
-                        <div class="mt-8">
-                            <h2>In this section</h2>
-                            <ul>
-                                {{ range .Pages }}
-                                    <li>
-                                        <a href="{{ .RelPermalink }}" class="text-blue-600 hover:underline">
-                                            {{ .Title }}
-                                        </a>
-                                    </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    {{ end }}
-                {{ else }}
-                    <div class="mt-12 pt-4 border-t flex justify-between">
-                        {{ with .PrevInSection }}
-                            <a href="{{ .RelPermalink }}" class="text-blue-600 hover:underline">
-                                ← {{ .Title }}
-                            </a>
-                        {{ end }}
-                        
-                        {{ with .NextInSection }}
-                            <a href="{{ .RelPermalink }}" class="text-blue-600 hover:underline">
-                                {{ .Title }} →
-                            </a>
-                        {{ end }}
-                    </div>
-                {{ end }}
-            </article>
-        </div>
-    </main>
+<!-- In your single.html, change this part: -->
+<main class="docs-content">
+    <div class="max-w-4xl mx-auto">
+        <article class="prose max-w-none">
+            <!-- Remove this line since it's duplicating the title -->
+            <!-- <h1>{{ .Title }}</h1> -->
+            {{ .Content }}
+            
+            {{ if eq .Kind "section" }}
+                <!-- Rest of your template... -->
+            {{ end }}
+        </article>
+    </div>
+</main>
+
+{{ partial "toc.html" . }}
+
 </div>
 {{ end }}
