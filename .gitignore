@@ -1,3 +1,14 @@
-node_modules
-.DS_Store
+# Hugo default output directory
+/public/
+
+# Node modules
+node_modules/
+
+# Generated files
 .hugo_build.lock
+.DS_Store
+resources/
+
+# Temporary files
+*.log
+temp/

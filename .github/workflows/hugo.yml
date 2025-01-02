@@ -1,56 +1,57 @@
-name: Deploy Hugo site
+name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches:
-      - main  # or your default branch name
-  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Go
-        uses: actions/setup-go@v4
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          go-version: '1.21'  # Required for Hugo Modules
-
+          node-version: '18'
+          
+      - name: Install Node.js dependencies
+        run: npm install
+      
+      - name: Build CSS
+        run: npm run build:css
+        
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          extended: true  # Required for some themes
-
-      - name: Clean module cache
-        run: hugo mod clean
-
-      - name: Get module
-        run: hugo mod get -u
-
-      - name: Build site
+          extended: true
+          
+      - name: Build with Hugo
         run: hugo --minify
-
+        
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
   deploy:
-    if: github.ref == 'refs/heads/main'  # only deploy from main branch
-    needs: build
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
