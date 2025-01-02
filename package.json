@@ -1,0 +1,21 @@
+{
+  "name": "hugo-docs-site",
+  "version": "1.0.0",
+  "description": "Documentation site built with Hugo and Tailwind CSS",
+  "scripts": {
+    "dev": "concurrently \"npm run watch:css\" \"hugo server --disableFastRender\"",
+    "build": "npm run build:css && hugo --minify",
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/main.css",
+    "watch:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0"
+  }
+}

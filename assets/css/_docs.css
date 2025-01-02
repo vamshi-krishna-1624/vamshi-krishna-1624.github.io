@@ -1,0 +1,38 @@
+.docs-container {
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    grid-template-rows: 64px 1fr;
+    height: 100vh;
+}
+
+.docs-container-header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    display: block;
+    height: 100%;
+}
+
+.docs-header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    border-bottom: 1px solid #e5e7eb;
+    background: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.docs-sidebar {
+    grid-column: 1;
+    grid-row: 2;
+    overflow-y: auto;
+    border-right: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+.docs-content {
+    grid-column: 2;
+    grid-row: 2;
+    overflow-y: auto;
+    padding: 2rem;
+}

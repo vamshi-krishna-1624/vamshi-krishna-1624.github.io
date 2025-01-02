@@ -1,0 +1,127 @@
+# Basic site configuration
+baseURL = "https://vamshi-krishna-1624.github.io/"  # Replace with your GitHub Pages URL
+languageCode = "en-us"
+title = "Project Documentation"
+
+# Enable features
+enableGitInfo = true
+enableRobotsTXT = true
+
+# Default content language
+defaultContentLanguage = "en"
+
+# Syntax highlighting
+[markup.highlight]
+  style = "dracula"
+  lineNos = true
+
+# Markdown rendering
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Module imports for Tailwind
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "node_modules/@tailwindcss/typography/dist/"
+    target = "assets/css/tailwind"
+
+# Site parameters
+[params]
+  # Site metadata
+  description = "Comprehensive documentation for your project"
+  author = "Your Name"
+  
+  # Version number
+  version = "1.0.0"
+  
+  # Social media
+  github = "https://vamshi-krishna-1624.github.io/""
+  twitter = "https://twitter.com/yourusername"
+  
+  # Logo path (relative to static folder)
+  logo = "/images/logo.svg"
+  
+  # Footer text
+  footer = "© 2024 Your Project. Built with Hugo."
+
+# Main menu
+[menu]
+  [[menu.main]]
+    name = "Getting Started"
+    url = "/getting-started/"
+    weight = 10
+  
+  [[menu.main]]
+    name = "Documentation"
+    url = "/docs/"
+    weight = 20
+    
+    [[menu.main]]
+      name = "Installation"
+      url = "/docs/installation/"
+      parent = "Documentation"
+      weight = 1
+    
+    [[menu.main]]
+      name = "Configuration"
+      url = "/docs/configuration/"
+      parent = "Documentation"
+      weight = 2
+    
+    [[menu.main]]
+      name = "Usage"
+      url = "/docs/usage/"
+      parent = "Documentation"
+      weight = 3
+  
+  [[menu.main]]
+    name = "API Reference"
+    url = "/api/"
+    weight = 30
+  
+  [[menu.main]]
+    name = "Examples"
+    url = "/examples/"
+    weight = 40
+  
+  [[menu.main]]
+    name = "Contributing"
+    url = "/contributing/"
+    weight = 50
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+
+# Privacy configurations
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+# Security headers
+[server]
+  [[server.headers]]
+    for = "/**"
+    [server.headers.values]
+      X-Frame-Options = "DENY"
+      X-Content-Type-Options = "nosniff"
+      X-XSS-Protection = "1; mode=block"
+      Referrer-Policy = "strict-origin-when-cross-origin"
+      Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data:;"

@@ -1,93 +1,88 @@
-# Basic site configuration
-baseURL = "https://vamshi-krishna-1624.github.io/"  # Replace with your GitHub Pages URL
+baseURL = "/"
 languageCode = "en-us"
-title = "Your Documentation Site"  # Replace with your site title
+title = "Your Project Documentation"
 
-# Enable search and other features
+# Basic configuration
 enableGitInfo = true
 enableRobotsTXT = true
+defaultContentLanguage = "en"
 
-# Theme-specific parameters
+# Site parameters
 [params]
-  # General appearance
-  BookTheme = "light"
-  BookToC = true
-  BookSection = "docs"
-  
-  # Search functionality
-  BookSearch = true
-  BookSearchExcludes = ['menu']
-  
-  # Repository links - replace with your repository URL
-  BookRepo = "https://github.com/vamshi-krishna-1624/vamshi-krishna-1624.github.io"
-  BookEditPath = "edit/main"
-  
-  # Navigation
-  BookMenuBundle = '/menu'
-  BookDateFormat = 'January 2, 2006'
-  
-  # Comments and feedback
-  BookComments = false
-  
-  # Custom parameters
-  author = "Vamshi Krishna"
-  description = "Comprehensive documentation for your project"
-  images = ["site-feature-image.jpg"]
-  
-# Output formats
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "RSS"]
+description = "Comprehensive documentation for your project"
+author = "Your Name"
+version = "1.0.0"
+logo = "/images/logo.svg"
+footer = "© 2024 Your Project. Built with Hugo."
 
-theme = "github.com/alex-shpak/hugo-book"
-
-[module]
-  [[module.imports]]
-    path = "github.com/alex-shpak/hugo-book"
-
+# Social media links
+github = "https://github.com/yourusername/project"
+twitter = "https://twitter.com/yourusername"
 
 # Markup configuration
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true  # Allows HTML in Markdown files
-      
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNos = false
-    style = "monokai"
+[markup.highlight]
+style = "dracula"
+lineNos = true
 
-# Main menu configuration
+[markup.goldmark.renderer]
+unsafe = true
+
+[build]
+  writeStats = true  # If you're using Hugo Pipes
+
+[minify]
+  minifyOutput = true  # Optional, for production
+
+
+# Menu configuration
 [menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  
-  [[menu.main]]
-    name = "Documentation"
-    url = "/docs/"
-    weight = 2
-  
-  [[menu.main]]
-    name = "API Reference"
-    url = "/api/"
-    weight = 3
-  
-  [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/vamshi-krishna-1624/vamshi-krishna-1624.github.io"
-    weight = 4
+[[menu.docs]]
+name = "Home"
+url = "/docs"
+weight = 10
 
-# Privacy configurations
+[[menu.docs]]
+name = "Getting Started"
+url = "/docs/getting-started/"
+weight = 20
+
+[[menu.docs]]
+name = "Installation"
+url = "/docs/installation/"
+weight = 30
+
+[[menu.docs]]
+name = "API Reference"
+url = "/docs/api/"
+weight = 40
+
+# Output formats
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+section = ["HTML", "RSS", "JSON"]
+
+# Privacy settings
 [privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    disable = true
-  [privacy.twitter]
-    disable = true
-  [privacy.youtube]
-    disable = true
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = true
+[privacy.instagram]
+disable = true
+[privacy.twitter]
+disable = true
+[privacy.vimeo]
+disable = true
+[privacy.youtube]
+disable = true
+
+# Security headers
+[server]
+[[server.headers]]
+for = "/**"
+[server.headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+X-XSS-Protection = "1; mode=block"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data:;"
