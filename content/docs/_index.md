@@ -17,6 +17,8 @@ As organizations and enterprises spread their digital portfolio footprints, ther
 
 This is a collapsible
 
+1.
+
 <details>
 
 <summary>Step 1: A Test Collapsible</summary>
@@ -24,9 +26,11 @@ This is a collapsible
 1. Test List Item 1
 2. Test List Item 2
 
-  <img src="../../.gitbook/assets/video-tutorial-3.png" alt="sample" data-size="original">
-  
-  ![](test.png)
+<img src="../../.gitbook/assets/video-tutorial-3.png" alt="" data-size="original">
+
+
+
+
 
 </details>
 
