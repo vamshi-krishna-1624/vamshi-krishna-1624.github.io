@@ -21,7 +21,7 @@ This is a collapsible
   1. Test List Item 1
   2. Test List Item 2
 
-  ![sample](images/test.pmg)
+  ![sample](images/test.png)
 
   
 </details>
