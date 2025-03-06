@@ -13,6 +13,19 @@ As organizations and enterprises spread their digital portfolio footprints, ther
 
 **Test** platform is a next-generation centralized security and operations platform powered by unconventional AI/ML models, offering insights/analyses into the trends of your environments and identities, and real-time detection of threats and risks (potential threats) based on historic and runtime data. 
 
+This is a collapsible
+
+<details>
+<summary><b>Step 1:</b> A Test Collapsible</summary>
+
+  1. Test List Item 1
+  2. Test List Item 2
+     ![sample](images/test.pmg)
+
+  
+</details>
+
+
 ## Contents
 
 - [Installation](/docs/installation/) - Get up and running quickly
