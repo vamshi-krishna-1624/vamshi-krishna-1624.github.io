@@ -24,7 +24,9 @@ This is a collapsible
 1. Test List Item 1
 2. Test List Item 2
 
-<img src="../../.gitbook/assets/video-tutorial-3.png" alt="sample" data-size="original">
+  <img src="../../.gitbook/assets/video-tutorial-3.png" alt="sample" data-size="original">
+  
+  ![](test.png)
 
 </details>
 
