@@ -17,8 +17,6 @@ As organizations and enterprises spread their digital portfolio footprints, ther
 
 This is a collapsible
 
-1.
-
 <details>
 
 <summary>Step 1: A Test Collapsible</summary>
@@ -31,8 +29,16 @@ This is a collapsible
 
 
 
-
 </details>
+
+
+1. one more test 1
+
+
+   ![](test.png)
+
+
+3. one more test 2
 
 ### Contents
 
