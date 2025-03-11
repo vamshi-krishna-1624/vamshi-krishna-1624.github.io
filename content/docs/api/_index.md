@@ -1,9 +1,20 @@
 ---
-title: "API Reference"
-type: "docs" 
-description: "Complete API documentation with examples"
-date: 2024-01-03
+title: API Reference
+type: docs
+date: 2024-01-03T00:00:00.000Z
 weight: 30
+description: Complete API documentation with examples
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: true
 ---
 
 # Overview
@@ -18,7 +29,7 @@ All API requests require authentication using Bearer tokens:
 Authorization: Bearer your-api-token
 ```
 
-To obtain an API token, visit your [account dashboard](/dashboard/api-tokens).
+To obtain an API token, visit your [account dashboard](../../../dashboard/api-tokens/).
 
 ## Base URL
 
@@ -40,8 +51,8 @@ Retrieves user information by ID.
 
 **Parameters:**
 
-| Name | Type | Description |
-|------|------|-------------|
+| Name | Type   | Description              |
+| ---- | ------ | ------------------------ |
 | `id` | string | User's unique identifier |
 
 **Response:**
@@ -96,11 +107,11 @@ Retrieves a list of projects.
 
 **Query Parameters:**
 
-| Name | Type | Description |
-|------|------|-------------|
-| `page` | integer | Page number (default: 1) |
+| Name       | Type    | Description                  |
+| ---------- | ------- | ---------------------------- |
+| `page`     | integer | Page number (default: 1)     |
 | `per_page` | integer | Items per page (default: 20) |
-| `status` | string | Filter by status (optional) |
+| `status`   | string  | Filter by status (optional)  |
 
 **Response:**
 
@@ -126,9 +137,9 @@ Retrieves a list of projects.
 
 The API uses conventional HTTP response codes to indicate success or failure:
 
-- 2xx: Success
-- 4xx: Client errors
-- 5xx: Server errors
+* 2xx: Success
+* 4xx: Client errors
+* 5xx: Server errors
 
 Error responses follow this format:
 
@@ -159,7 +170,7 @@ X-RateLimit-Reset: 1640995200
 Webhooks allow you to receive real-time updates when certain events occur:
 
 1. Create a webhook endpoint on your server
-2. Register the webhook URL in your [dashboard](/dashboard/webhooks)
+2. Register the webhook URL in your [dashboard](../../../dashboard/webhooks/)
 3. We'll send POST requests to your URL when events occur
 
 Example webhook payload:
@@ -180,13 +191,13 @@ Example webhook payload:
 
 We provide official SDKs for multiple languages:
 
-- [JavaScript](https://github.com/your-org/js-sdk)
-- [Python](https://github.com/your-org/python-sdk)
-- [Ruby](https://github.com/your-org/ruby-sdk)
-- [Go](https://github.com/your-org/go-sdk)
+* [JavaScript](https://github.com/your-org/js-sdk)
+* [Python](https://github.com/your-org/python-sdk)
+* [Ruby](https://github.com/your-org/ruby-sdk)
+* [Go](https://github.com/your-org/go-sdk)
 
 ## Need Help?
 
-- Join our [Discord community](https://discord.gg/your-project)
-- Email support at api-support@example.com
-- Check our [Status Page](https://status.example.com) for API uptime
+* Join our [Discord community](https://discord.gg/your-project)
+* Email support at api-support@example.com
+* Check our [Status Page](https://status.example.com) for API uptime
