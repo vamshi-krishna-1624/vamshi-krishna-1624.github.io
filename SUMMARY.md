@@ -10,3 +10,4 @@
       * [Overview](content/docs/getting-started/_index.md)
     * [installation](content/docs/installation/README.md)
       * [Objective](content/docs/installation/_index.md)
+* [Test](test.md)
