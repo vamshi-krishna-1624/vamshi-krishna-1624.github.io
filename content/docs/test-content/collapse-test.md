@@ -8,7 +8,9 @@ Test Step Paragraph
 Test List
 
   1. Test List Item 1
+     
      ![](/content/docs/test.png)
-  3. Test List Item 2
+     
+  2. Test List Item 2
 
 </details>
