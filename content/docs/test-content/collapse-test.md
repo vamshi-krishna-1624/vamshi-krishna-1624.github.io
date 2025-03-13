@@ -7,7 +7,7 @@ Test Step Paragraph
 
 Test List
 
-  1. Test List Item 1
+  1. Test List **Item 1**
      
      ![](/content/docs/test.png)
      
