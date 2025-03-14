@@ -1,4 +1,4 @@
-# Collapse Test
+# Collapse test
 
 <details>
 
