@@ -2,7 +2,7 @@
 title: About Test
 type: docs
 weight: 20
-description: Platform Overview
+description: Test Platform Overview
 ---
 
 # About Test
@@ -26,19 +26,12 @@ This is a collapsible
 
 <img src="../../.gitbook/assets/video-tutorial-3.png" alt="" data-size="original">
 
-
-
-
 </details>
 
+1.  one more test 1
 
-1. one more test 1
-
-
-   ![](test.png)
-
-
-3. one more test 2
+    ![](test.png)
+2. one more test 2
 
 ### Contents
 
