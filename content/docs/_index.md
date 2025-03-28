@@ -19,7 +19,7 @@ Test Tabs
 
 {% tabs %}
 {% tab title="First Tab" %}
-{% content-ref url="./" %}
+{% content-ref url="test-content/test.png" %}
 [Test PNG](test.png)
 {% endcontent-ref %}
 
