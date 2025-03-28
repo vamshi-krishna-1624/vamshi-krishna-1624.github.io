@@ -1,6 +1,6 @@
 # Collapse Test
 
-<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td><a href="../../docs/test-content/collapse-test/readme.md">Collapse Test READ ME</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td><a href="../../docs/content/test-content/collapse-test/readme.md">Collapse Test READ ME</a></td></tr></tbody></table>
 
 
 
