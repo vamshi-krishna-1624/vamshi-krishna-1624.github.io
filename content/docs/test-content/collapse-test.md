@@ -1,4 +1,8 @@
-# Collapse test
+# Collapse Test
+
+<table data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td><a href="https://www.google.com">www.google.com</a></td></tr></tbody></table>
+
+
 
 <details>
 
