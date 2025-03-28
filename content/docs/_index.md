@@ -15,8 +15,12 @@ As organizations and enterprises spread their digital portfolio footprints, ther
 
 **Test** platform is a next-generation centralized security and operations platform powered by unconventional AI/ML models, offering insights/analyses into the trends of your environments and identities, and real-time detection of threats and risks (potential threats) based on historic and runtime data.
 
-{% content-ref url="test-content/" %}
-[test-content](test-content/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers" %}
+[For Designers](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers)
 {% endcontent-ref %}
 
 
