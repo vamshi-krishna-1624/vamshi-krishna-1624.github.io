@@ -27,7 +27,7 @@ Test Tabs
 {% endtab %}
 
 {% tab title="Second Tab" %}
-\[Google]\(www.google.com)
+[Google](www.google.com)
 {% endtab %}
 {% endtabs %}
 
