@@ -15,7 +15,7 @@ As organizations and enterprises spread their digital portfolio footprints, ther
 
 **Test** platform is a next-generation centralized security and operations platform powered by unconventional AI/ML models, offering insights/analyses into the trends of your environments and identities, and real-time detection of threats and risks (potential threats) based on historic and runtime data.
 
-[README](../../docs/test-content/collapse-test/readme.md)
+[README](../../docs/content/test-content/collapse-test/readme.md)
 
 Test Tabs
 
