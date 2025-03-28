@@ -12,3 +12,4 @@
       * [Objective](content/docs/installation/_index.md)
     * [Collapse Test](/content/docs/test-content/collapse-test.md)
 * [Test](test.md)
+* [Test Content README](content/docs/test-content/README.md)
