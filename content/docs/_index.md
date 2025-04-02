@@ -15,11 +15,11 @@ See the following pages for content in your preferred language:
 {% endtab %}
 
 {% tab title="Chinese" %}
-[For Designers](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers)
+\[For Designers]\(content-2/docs-2/use-cases/for-designers.md)
 {% endtab %}
 
 {% tab title="French" %}
-[For Designers](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers)
+[For Designers](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-developers)
 {% endtab %}
 {% endtabs %}
 
