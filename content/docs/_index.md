@@ -7,6 +7,28 @@ description: Test Platform Overview
 
 # About Test
 
+See the following pages for content in your preferred language:
+
+{% tabs %}
+{% tab title="Japanese" %}
+[For Designers](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers)
+{% endtab %}
+
+{% tab title="Chinese" %}
+[For Designers](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers)
+{% endtab %}
+
+{% tab title="French" %}
+[For Designers](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers)
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+Note that support for language translation is limited. In case you need localization for your language that is not supported/listed, contact support@example.com
+{% endhint %}
+
+
+
 ### Objective
 
 **Test** is a Security & Operations Cloud Platform offering real-time detection, analysis, and insights for your cloud environments, repositories, code workflows, or your identity providers. The detection/analysis/insights cover all activities in cloud environments, activities related to changes in your repositories, workflows, or user activities as seen from the identity provider point of view. The platform then offers insights into anomalous events, detections for any potential threats, and also analyses about the usage patterns for the identities in your respective organizations or environments.
@@ -15,8 +37,8 @@ As organizations and enterprises spread their digital portfolio footprints, ther
 
 **Test** platform is a next-generation centralized security and operations platform powered by unconventional AI/ML models, offering insights/analyses into the trends of your environments and identities, and real-time detection of threats and risks (potential threats) based on historic and runtime data.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 {% content-ref url="https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers" %}
