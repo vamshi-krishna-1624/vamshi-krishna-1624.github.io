@@ -1,3 +1,4 @@
 # Table of contents
 
-* [Table of contents](README.md)
+* [👋 Welcome to A Product](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/)
+* [Welcome to A Product - Direct Link](https://ext-doc-test.gitbook.io/sample-test-site)
