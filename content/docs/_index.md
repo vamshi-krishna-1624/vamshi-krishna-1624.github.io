@@ -23,7 +23,7 @@ As organizations and enterprises spread their digital portfolio footprints, ther
 [For Designers](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers)
 {% endcontent-ref %}
 
-
+[For Designers](https://app.gitbook.com/s/15wtW9EIMfrgT6DkbRIJ/use-cases/for-designers)
 
 [README](jp/test-content/)
 
