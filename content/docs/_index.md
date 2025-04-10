@@ -7,7 +7,7 @@ description: Test Platform Overview
 
 # About Test
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Getting Started</td><td><a href="test.png">test.png</a></td><td><a href="getting-started/">getting-started</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Getting Started</strong></td><td><a href="test.png">test.png</a></td><td><a href="getting-started/">getting-started</a></td></tr><tr><td><strong>Install</strong></td><td><a href="../../.gitbook/assets/video-tutorial-3.png">video-tutorial-3.png</a></td><td><a href="installation/">installation</a></td></tr><tr><td><strong>API</strong></td><td><a href="test.png">test.png</a></td><td><a href="api/">api</a></td></tr></tbody></table>
 
 
 
