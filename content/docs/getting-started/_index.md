@@ -1,22 +1,26 @@
 ---
-title: "Getting Started"
-type: "docs" 
-description: "Quick start guide to get up and running with our project"
-date: 2024-01-01
+title: Getting Started
+type: docs
+date: 2024-01-01T00:00:00.000Z
 weight: 10
+description: Quick start guide to get up and running with our project
 ---
 
 # Overview
 
 Welcome to our project! This guide will help you get up and running quickly. Whether you're new to the project or an experienced developer, this guide will provide everything you need to start building.
 
+[installation](../installation/ "mention")
+
+\[Installation]\(
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Git
+* Node.js (v18 or higher)
+* npm or yarn
+* Git
 
 ## Quick Start
 
@@ -60,19 +64,19 @@ Here's an overview of the key directories in our project:
 
 ## Next Steps
 
-- Check out our [Configuration Guide](/docs/configuration) to learn about customizing the project
-- Read the [API Reference](/api) to understand available endpoints
-- See [Examples](/examples) for common use cases
-- Join our [Community](/community) to get help and share your experiences
+* Check out our [Configuration Guide](../../../docs/configuration/) to learn about customizing the project
+* Read the [API Reference](../../../api/) to understand available endpoints
+* See [Examples](../../../examples/) for common use cases
+* Join our [Community](../../../community/) to get help and share your experiences
 
 ## Need Help?
 
 If you run into any issues:
 
-1. Check our [FAQ](/faq) for common problems and solutions
+1. Check our [FAQ](../../../faq/) for common problems and solutions
 2. Search existing [GitHub Issues](https://github.com/yourusername/project/issues)
 3. Join our [Discord community](https://discord.gg/yourproject) for real-time help
 
 ## Contributing
 
-We welcome contributions! Please read our [Contributing Guide](/contributing) to learn about our development process and how you can propose bugfixes and improvements.
+We welcome contributions! Please read our [Contributing Guide](../../../contributing/) to learn about our development process and how you can propose bugfixes and improvements.
