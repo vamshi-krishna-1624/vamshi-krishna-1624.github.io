@@ -2,7 +2,7 @@
 
 ## How Projects work
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.
+Projects provide isolation and are a great way to organize your work in a clean and efficient manner. Work in each project is limited that project's scope and cannot be accessed without referring to the project. This will limit the direct access to the objects in that project and there is always a copy of the object using the project reference and then an action can be performed such as read object or clone object.
 
 ### The Basics
 
